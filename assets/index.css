@@ -1,0 +1,100 @@
+/* width */
+::-webkit-scrollbar {
+    width: 4px!important;
+    height: 4px!important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(225,225,225);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(200,200,200);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body { overflow-x: hidden }
+
+* { scroll-behavior: smooth; }
+
+
+.nv { background: rgb(248,249,249) }
+
+.chat-area{ height: 80vh }
+
+.navbar-chat { background: rgb(248,249,250); }
+
+.area-chatting {
+    background: rgb(248,249,250);
+    height: 61vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.newsImage { height: 40vh }
+
+.chat-fields { overflow: auto }
+.chat-fields .time { margin-left: 5px }
+.chat-fields .time p { font-size: 12px }
+
+.upPage {
+    position:fixed;
+    bottom: 0; right: 0;
+    margin: 30px;
+    z-index:99;
+}
+
+@media(max-width: 885px) {
+    .newsImage { height: 20vh }
+}
+
+@media(max-width: 835px) {
+    
+}
+
+@media(max-width: 801px) {
+    .newsImage { height: 18vh }
+}
+
+@media(max-width: 768px) {
+    .newsImage { height: 22vh }
+}
+
+@media(max-width: 430px) {
+    .newsImage { height: 25vh }
+}
+
+@media(max-width: 415px) {
+    .chat-area { height: 79vh }
+    .area-chatting { height: 58vh }
+}
+
+@media(max-width: 390px) {
+    .chat-area { height: 78vh }
+    .newsImage { height: 25.5vh }
+}
+
+@media(max-width: 376px) {
+    .chat-area { height: 80vh }
+    .newsImage { height: 26.5vh }
+}
+
+@media(max-width: 325px) {
+    .newsImage { height: 38vh }
+    .upPage { margin: 20px }
+}

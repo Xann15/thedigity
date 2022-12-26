@@ -1,0 +1,2 @@
+<?php
+include '../conn.php';
